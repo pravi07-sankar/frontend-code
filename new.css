@@ -1,0 +1,666 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .signup-btn {
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; /* Adds space between the text and the image */
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text .highlight {
+    color: orange;
+  }
+  
+  .hero-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-text .cta-btn {
+    background-color: orange;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    flex-shrink: 0;
+  }
+  
+  .hero-image img {
+    max-width: 550px;
+    border-radius: 10px;
+  }
+  
+  /* Things You Need to Do Section */
+  .things-to-do {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .things-to-do h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  
+  /* Things You Need to Do Section */
+.things-to-do {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .things-to-do h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .things-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .thing-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 1 calc(30% - 1rem); /* Responsive cards, take 30% width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .thing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .thing-card img {
+    max-width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .thing-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .thing-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  
+/* Exclusive Deals & Discounts Section */
+.exclusive-deals {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .exclusive-deals h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exclusive-deals p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .deals-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .deal-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1; /* Ensures equal width for all cards */
+    max-width: 22%; /* Restricts width to fit 4 cards in one row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .deal-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .deal-info {
+    padding: 1rem;
+  }
+  
+  .deal-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .deal-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .deal-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .old-price {
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .rating {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  
+  @media (max-width: 768px) {
+    .deals-grid {
+      flex-wrap: wrap;
+    }
+    .deal-card {
+      max-width: 48%; /* Display 2 cards per row on smaller screens */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .deal-card {
+      max-width: 100%; /* Stack cards on top of each other on small screens */
+    }
+  }
+
+  
+  /* Best Vacation Plan Section */
+.vacation-plan {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .vacation-plan h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vacation-plan .highlight {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .vacation-plan p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .vacation-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .vacation-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 30%; /* Restrict width for uniform cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .vacation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .vacation-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vacation-info {
+    padding: 1rem;
+  }
+  
+  .vacation-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .vacation-info .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vacation-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .vacation-grid {
+      flex-wrap: wrap;
+    }
+    .vacation-card {
+      max-width: 48%; /* Display 2 cards per row on smaller screens */
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vacation-card {
+      max-width: 100%; /* Stack cards on top of each other */
+    }
+  }
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonials .highlight {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .testimonials p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .testimonial-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 40%;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid orange;
+  }
+  
+  .author-info h4 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .author-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+  }
+
+  
+  @media (max-width: 768px) {
+    .testimonial-slider {
+      flex-wrap: wrap;
+    }
+    .testimonial-card {
+      max-width: 100%; /* Stack testimonials vertically */
+      margin-bottom: 1.5rem;
+    }
+  }
+
+ /* Latest Blog Section */
+.latest-blog {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .latest-blog h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .latest-blog .highlight {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .latest-blog p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .blog-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Makes the blog cards responsive */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .blog-info {
+    padding: 1rem;
+  }
+  
+  .blog-info h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-info .date {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  @media (max-width: 768px) {
+    .blog-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog-card {
+      width: 45%; /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-card {
+      width: 90%; /* One card per row on small screens */
+      margin-bottom: 1rem;
+    }
+  }
+/* Subscribe and Get Exclusive Deals & Offer Section */
+.subscribe-offer {
+    background-color: orange; /* Orange background color */
+    padding: 2rem 0; /* Reduced padding for a more compact section */
+    text-align: center;
+    color: white; /* White text color to contrast with orange background */
+    border-radius: 10px; /* Optional: rounded corners for a smooth look */
+    max-width: 800px; /* Limiting the width to fit content better */
+    margin: 0 auto; /* Centering the section */
+    margin-bottom: 3rem; /* Added margin to create space below this section */
+  }
+  
+  .subscribe-offer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subscribe-offer .highlight {
+    font-weight: bold;
+  }
+  
+  .subscribe-offer p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem; /* Reduced margin */
+  }
+  
+  .subscribe-form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .subscribe-form input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none; /* Remove the default border */
+    border-radius: 5px;
+    width: 250px; /* Reduced width for a tighter fit */
+    margin-right: 10px; /* Space between input and button */
+  }
+  
+  .subscribe-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #e87a29; /* Slightly darker shade of orange for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #d56921; /* Darker orange on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .subscribe-form input {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .subscribe-form input {
+      width: 100%;
+    }
+  }
+ /* Footer Section */
+.footer {
+    background-color: #f1f1f1; /* Light background color for the footer */
+    padding: 2rem 0;
+  }
+  
+  /* Footer Top */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd; /* Separator line between top and bottom sections */
+  }
+  
+  .footer-logo img {
+    width: 150px; /* Adjust size of the logo */
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #e87a29; /* Orange color on hover */
+  }
+  
+  .footer-social a {
+    margin-right: 20px;
+  }
+  
+  .footer-social .social-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333; /* Dark background for the bottom */
+  }
+  
+  .footer-bottom p {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-social {
+      margin-top: 1rem;
+    }
+  }
+  
